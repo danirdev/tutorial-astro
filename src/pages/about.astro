@@ -1,5 +1,4 @@
 ---
-import '../styles/global.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 const pageTitle = "Sobre mi";
@@ -18,8 +17,7 @@ const finished = false;
 const goal = 3;
 ---
 
-<BaseLayout>
-    <h1>{pageTitle}</h1>
+<BaseLayout pageTitle={pageTitle}>
     <h2>... ¡y mi nuevo sitio Astro!</h2>
 
     {happy && <p>¡Estoy feliz de aprender Astro!</p>}
